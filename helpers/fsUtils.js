@@ -1,8 +1,8 @@
 const fs = require('fs');
-const utils = require('utils');
+const util = require('util');
 
 //fe.readFile
-const readFiles = utils.promisify(fs.readFile);
+const readFiles = util.promisify(fs.readFile);
 
 //writes file context to a destination
 const writeFiles = (destination, content) =>{
